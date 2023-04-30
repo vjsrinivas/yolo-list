@@ -1,21 +1,43 @@
 Network Family,Name,Paper,Year Published,Categories,Dataset Type,mAP@0.5,mAP @ 0.5:0.95::0.05,Code Source,Notes
-YOLO,YOLO,https://arxiv.org/pdf/1506.02640.pdf,2015,pjreddie;voc,voc2007-test; voc2012-test,63.4; 57.9,,https://github.com/pjreddie/darknet,
-YOLOv2,YOLOv2,https://arxiv.org/pdf/1612.08242.pdf,2016,pjreddie;voc;coco,coco-testdev2015; voc2007-test; voc2012-test,44; 78.6; 73.4,21.6;N/A;N/A,https://pjreddie.com/darknet/yolov2/,
-YOLOv3,YOLOv3,https://arxiv.org/pdf/1804.02767.pdf,2018,pjreddie;voc;coco,coco-test2017,57.9,33,https://pjreddie.com/darknet/yolo/,COCO mAP results taken from best performing input size (608)
-YOLOv3,YOLOv3-Tiny,,2018,pjreddie;voc;coco,coco-test2017,,33.1,https://github.com/pjreddie/darknet,mAP @ 0.5:0.95::0.05 taken from pjreddie Darknet repository. This is not a network that occurs in the paper
-YOLOv3+ASFF,YOLOv3+ASFF,https://arxiv.org/pdf/1911.09516.pdf,2019,coco,coco-test2017,59.8,40.6,https://github.com/ruinmessi/ASFF,
-YOLOv4,YOLOv4,https://arxiv.org/pdf/2004.10934.pdf,2020,alexey;coco,coco-test2017,65.7,43.5,,
+YOLOv6 version 3,YOLOv6-L6,https://arxiv.org/pdf/2301.05586.pdf,2023,coco,coco-val2017,74.5,57.2,https://github.com/meituan/YOLOv6,Model was evaluated at 1280x1280 input size
+YOLOv6 version 3,YOLOv6-M6,,2023,coco,coco-val2017,72.4,55.2,,Model was evaluated at 1280x1280 input size
+YOLOv6 version 3,YOLOv6-S6,,2023,coco,coco-val2017,67.7,50.3,,Model was evaluated at 1280x1280 input size
+YOLOv6 version 3,YOLOv6-N6,,2023,coco,coco-val2017,61.5,44.9,,Model was evaluated at 1280x1280 input size
+YOLOv6 version 3,YOLOv6-L,,2023,coco,coco-val2017,70.3,52.8,,
+YOLOv6 version 3,YOLOv6-M,,2023,coco,coco-val2017,66.9,50,,
+YOLOv6 version 3,YOLOv6-S,,2023,coco,coco-val2017,61.8,45,,
+YOLOv6 version 3,YOLOv6-N,,2023,coco,coco-val2017,53.1,37.5,,
+PP-YOLOE,PP-YOLOE-X,https://arxiv.org/pdf/2203.16250.pdf,2022,baidu;coco,coco-test2017,54.7,72,https://github.com/yeyupiaoling/PP-YOLOE,
+,PP-YOLOE-L,,2022,baidu;coco,coco-test2017,52.9,70.1,,
+,PP-YOLOE-M,,2022,baidu;coco,coco-test2017,49.8,67.1,,
+,PP-YOLOE-S,,2022,baidu;coco,coco-test2017,43.7,60.6,,
+YOLOv6,YOLOv6-L,https://arxiv.org/pdf/2209.02976.pdf,2022,coco,coco-val2017,70,52.5,https://github.com/meituan/YOLOv6,
+YOLOv6,YOLOv6-L-ReLU,,2022,coco,coco-val2017,69.2,51.7,,
+YOLOv6,YOLOv6-M,,2022,coco,coco-val2017,66.8,49.5,,
+YOLOv6,YOLOv6_S,,2022,coco,coco-val2017,60.4,43.5,,
+YOLOv6,YOLOv6-T,,2022,coco,coco-val2017,56.6,40.3,,
+YOLOv6,YOLOv6-N,,2022,coco,coco-val2017,51.2,35.9,,
+YOLOv7,YOLOv7,https://arxiv.org/pdf/2207.02696.pdf,2022,coco,coco-test2017,69.7,51.4,https://github.com/WongKinYiu/yolov7,
+YOLOv7,YOLOv7-X,,2022,coco,coco-test2017,71.2,53.1,,
+YOLOv7,YOLOv7-W6,,2022,coco,coco-test2017,72.6,54.9,,
+YOLOv7,YOLOv7-E6,,2022,coco,coco-test2017,73.5,56,,
+YOLOv7,YOLOv7-D6,,2022,coco,coco-test2017,74,56.6,,
+YOLOv7,YOLOv7-E6E,,2022,coco,coco-test2017,74.4,56.8,,
+YOLOv7,YOLOv7-tiny SiLU,,2022,coco,coco-test2017,56.7,38.7,,
+YOLOv8,YOLOv8x,,2022,ultralytics;coco,coco-val2017,,53.9,https://github.com/ultralytics/ultralytics,This network doesn't have a proper paper (yet); and there are continoual updates to model types and model mAP
+YOLOv8,YOLOv8l,,2022,ultralytics;coco,coco-val2017,,52.9,,
+YOLOv8,YOLOv8m,,2022,ultralytics;coco,coco-val2017,,50.2,,
+YOLOv8,YOLOv8s,,2022,ultralytics;coco,coco-val2017,,44.9,,
+YOLOv8,YOLOv8n,,2022,ultralytics;coco,coco-val2017,,37.3,,
+YOLOSA,YOLOSA-S,https://arxiv.org/pdf/2206.11825.pdf,2022,self-attention; coco,coco-test2017,,39.8,,
+YOLOSA,YOLOSA-M,,2022,self-attention; coco,coco-test2017,,46.1,,
+YOLOSA,YOLOSA-L,,2022,self-attention; coco,coco-test2017,,49,,
 Scaled-YOLOv4,YOLOv4-Tiny,https://arxiv.org/pdf/2011.08036.pdf,2021,alexey;wang;coco,coco-test2017,40.2,28.7,,
 Scaled-YOLOv4,YOLOv4-CSP,,2021,alexey;wang;coco,coco-test2017,66.2,47.5,,
 Scaled-YOLOv4,YOLOv4-P5,,2021,alexey;wang;coco,coco-test2017,70.3,51.8,,
 Scaled-YOLOv4,YOLOv4-P6,,2021,alexey;wang;coco,coco-test2017,72.6,54.5,,
 Scaled-YOLOv4,YOLOv4-P7,,2021,alexey;wang;coco,coco-test2017,73.4,55.5,,
-PP-YOLO,PP-YOLO,https://arxiv.org/pdf/2007.12099.pdf,2020,baidu;coco,coco-test2017,65.2,45.2,https://github.com/PaddlePaddle/PaddleDetection,
 PP-YOLOv2,PP-YOLOv2,https://arxiv.org/pdf/2104.10419.pdf,2021,baidu;coco,coco-test2017,69,50.3,https://github.com/PaddlePaddle/PaddleDetection,COCO result from best backbone (ResNet101-vd-dcn) @ 640x640
-PP-YOLOE,PP-YOLOE-X,https://arxiv.org/pdf/2203.16250.pdf,2022,baidu;coco,coco-test2017,54.7,72,https://github.com/yeyupiaoling/PP-YOLOE,
-,PP-YOLOE-L,,2022,baidu;coco,coco-test2017,52.9,70.1,,
-,PP-YOLOE-M,,2022,baidu;coco,coco-test2017,49.8,67.1,,
-,PP-YOLOE-S,,2022,baidu;coco,coco-test2017,43.7,60.6,,
 YOLOv5,YOLOv5-N,https://github.com/ultralytics/yolov5,2021,ultralytics;coco,coco-test2017,46,28.4,https://github.com/ultralytics/yolov5,This network doesn't have a proper paper (yet); and there are continoual updates to model types and model mAP
 YOLOv5,YOLOv5-S,,2021,ultralytics;coco,coco-test2017,56,37.2,,
 YOLOv5,YOLOv5-M,,2021,ultralytics;coco,coco-test2017,63.9,45.2,,
@@ -32,9 +54,6 @@ YOLOX,YOLOX-L,,2021,coco,coco-test2017,68.5,50,,
 YOLOX,YOLOX-X,,2021,coco,coco-test2017,69.6,51.2,,
 YOLOX,YOLOX-Tiny,,2021,coco,coco-test2017,,32.8,,
 YOLOX,YOLOX-Nano,,2021,coco,coco-test2017,,25.3,,
-YOLO Nano,YOLO Nano,https://arxiv.org/pdf/1910.01271.pdf,2019,coco,voc2007-test,69.1,,,
-YOLObile,YOLObile,https://arxiv.org/pdf/2009.05697.pdf,2020,coco,coco-test2017,49,31.6,https://github.com/nightsnack/YOLObile,
-Stochastic-YOLO,Stochastic-YOLO,https://arxiv.org/pdf/2009.02967.pdf,2020,coco; odd,coco-test2017,,37.14,https://github.com/tjiagoM/stochastic-YOLO/,This only includes best performing version (Ensemble-5 at conf=0.1). This mAP is for COCO val2017
 CSL-YOLO,CSL-YOLO,https://arxiv.org/pdf/2107.04829.pdf,2021,coco,coco-test2017,46.2,26.3,,mAP only shows best performing CSL-YOLO with image size of 512x512
 YOLOR,YOLOR-CSP,https://arxiv.org/pdf/2105.04206.pdf,2021,coco,coco-test2017,71.2,52.8,https://github.com/WongKinYiu/yolor,mAP performance was taken from the official implementation
 YOLOR,YOLOR-CSP-X,,2021,coco,coco-test2017,73.1,54.8,,
@@ -42,35 +61,16 @@ YOLOR,YOLOR-P6,,2021,coco,coco-test2017,73.3,55.7,,
 YOLOR,YOLOR-W6,,2021,coco,coco-test2017,74.4,56.9,,
 YOLOR,YOLOR-E6,,2021,coco,coco-test2017,75.2,57.6,,
 YOLOR,YOLOR-D6,,2021,coco,coco-test2017,75.8,58.2,,
-YOLOv6,YOLOv6-L,https://arxiv.org/pdf/2209.02976.pdf,2022,coco,coco-val2017,70,52.5,https://github.com/meituan/YOLOv6,
-YOLOv6,YOLOv6-L-ReLU,,2022,coco,coco-val2017,69.2,51.7,,
-YOLOv6,YOLOv6-M,,2022,coco,coco-val2017,66.8,49.5,,
-YOLOv6,YOLOv6_S,,2022,coco,coco-val2017,60.4,43.5,,
-YOLOv6,YOLOv6-T,,2022,coco,coco-val2017,56.6,40.3,,
-YOLOv6,YOLOv6-N,,2022,coco,coco-val2017,51.2,35.9,,
-YOLOv6 version 3,YOLOv6-L6,https://arxiv.org/pdf/2301.05586.pdf,2023,coco,coco-val2017,74.5,57.2,https://github.com/meituan/YOLOv6,Model was evaluated at 1280x1280 input size
-YOLOv6 version 3,YOLOv6-M6,,2023,coco,coco-val2017,72.4,55.2,,Model was evaluated at 1280x1280 input size
-YOLOv6 version 3,YOLOv6-S6,,2023,coco,coco-val2017,67.7,50.3,,Model was evaluated at 1280x1280 input size
-YOLOv6 version 3,YOLOv6-N6,,2023,coco,coco-val2017,61.5,44.9,,Model was evaluated at 1280x1280 input size
-YOLOv6 version 3,YOLOv6-L,,2023,coco,coco-val2017,70.3,52.8,,
-YOLOv6 version 3,YOLOv6-M,,2023,coco,coco-val2017,66.9,50,,
-YOLOv6 version 3,YOLOv6-S,,2023,coco,coco-val2017,61.8,45,,
-YOLOv6 version 3,YOLOv6-N,,2023,coco,coco-val2017,53.1,37.5,,
-YOLOv7,YOLOv7,https://arxiv.org/pdf/2207.02696.pdf,2022,coco,coco-test2017,69.7,51.4,https://github.com/WongKinYiu/yolov7,
-YOLOv7,YOLOv7-X,,2022,coco,coco-test2017,71.2,53.1,,
-YOLOv7,YOLOv7-W6,,2022,coco,coco-test2017,72.6,54.9,,
-YOLOv7,YOLOv7-E6,,2022,coco,coco-test2017,73.5,56,,
-YOLOv7,YOLOv7-D6,,2022,coco,coco-test2017,74,56.6,,
-YOLOv7,YOLOv7-E6E,,2022,coco,coco-test2017,74.4,56.8,,
-YOLOv7,YOLOv7-tiny SiLU,,2022,coco,coco-test2017,56.7,38.7,,
-YOLOv8,YOLOv8x,,2022,ultralytics;coco,coco-val2017,,53.9,https://github.com/ultralytics/ultralytics,This network doesn't have a proper paper (yet); and there are continoual updates to model types and model mAP
-YOLOv8,YOLOv8l,,2022,ultralytics;coco,coco-val2017,,52.9,,
-YOLOv8,YOLOv8m,,2022,ultralytics;coco,coco-val2017,,50.2,,
-YOLOv8,YOLOv8s,,2022,ultralytics;coco,coco-val2017,,44.9,,
-YOLOv8,YOLOv8n,,2022,ultralytics;coco,coco-val2017,,37.3,,
-YOLOSA,YOLOSA-S,https://arxiv.org/pdf/2206.11825.pdf,2022,self-attention; coco,coco-test2017,,39.8,,
-YOLOSA,YOLOSA-M,,2022,self-attention; coco,coco-test2017,,46.1,,
-YOLOSA,YOLOSA-L,,2022,self-attention; coco,coco-test2017,,49,,
 YOLOS,YOLOS-Ti,https://arxiv.org/pdf/2106.00666.pdf,2021,transformer; coco,coco-test2017,,30,,AP scores taken based on largest image size input (528x528)
 YOLOS,YOLOS-S,,2021,transformer; coco,coco-test2017,,37.6,,AP scores taken based on largest image size input (784x784)
 YOLOS,YOLOS-B,,2021,transformer; coco,coco-test2017,,42,,
+YOLOv4,YOLOv4,https://arxiv.org/pdf/2004.10934.pdf,2020,alexey;coco,coco-test2017,65.7,43.5,,
+PP-YOLO,PP-YOLO,https://arxiv.org/pdf/2007.12099.pdf,2020,baidu;coco,coco-test2017,65.2,45.2,https://github.com/PaddlePaddle/PaddleDetection,
+YOLObile,YOLObile,https://arxiv.org/pdf/2009.05697.pdf,2020,coco,coco-test2017,49,31.6,https://github.com/nightsnack/YOLObile,
+Stochastic-YOLO,Stochastic-YOLO,https://arxiv.org/pdf/2009.02967.pdf,2020,coco; odd,coco-test2017,,37.14,https://github.com/tjiagoM/stochastic-YOLO/,This only includes best performing version (Ensemble-5 at conf=0.1). This mAP is for COCO val2017
+YOLOv3+ASFF,YOLOv3+ASFF,https://arxiv.org/pdf/1911.09516.pdf,2019,coco,coco-test2017,59.8,40.6,https://github.com/ruinmessi/ASFF,
+YOLO Nano,YOLO Nano,https://arxiv.org/pdf/1910.01271.pdf,2019,coco,voc2007-test,69.1,,,
+YOLOv3,YOLOv3,https://arxiv.org/pdf/1804.02767.pdf,2018,pjreddie;voc;coco,coco-test2017,57.9,33,https://pjreddie.com/darknet/yolo/,COCO mAP results taken from best performing input size (608)
+YOLOv3,YOLOv3-Tiny,,2018,pjreddie;voc;coco,coco-test2017,,33.1,https://github.com/pjreddie/darknet,mAP @ 0.5:0.95::0.05 taken from pjreddie Darknet repository. This is not a network that occurs in the paper
+YOLOv2,YOLOv2,https://arxiv.org/pdf/1612.08242.pdf,2016,pjreddie;voc;coco,coco-testdev2015; voc2007-test; voc2012-test,44; 78.6; 73.4,21.6;N/A;N/A,https://pjreddie.com/darknet/yolov2/,
+YOLO,YOLO,https://arxiv.org/pdf/1506.02640.pdf,2015,pjreddie;voc,voc2007-test; voc2012-test,63.4; 57.9,,https://github.com/pjreddie/darknet,
