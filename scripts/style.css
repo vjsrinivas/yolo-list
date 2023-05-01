@@ -1,0 +1,20 @@
+tr:hover td {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+a:link.default_link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+img.emoji {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px
+}
+
+i.emoji {
+    margin-left: 5px
+}

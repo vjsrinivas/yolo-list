@@ -4,21 +4,114 @@
     <meta charset="UTF-8">
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Vijay Rajagopal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="./scripts/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png"> 
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-</head>
 <body>
-    <div>
+    <div class="flex justify-center mx-auto px-4 mt-8 mb-2">
+        <h1 class="text-5xl font-extrabold">YOLO Table</h1>
+    </div>
+    <div class="flex justify-center mx-auto px-4 mt-2">
+        <p class="text-md">All the YOLO (You Only Look Once) Neural Networks</p>
+    </div>
+    <div class="container mx-auto px-4 mb-4 mt-8">
+        <div class="flex justify-center">
+            <button class="py-2 px-4 m-1 text-md
+                        border-2 border-black/25 text-black
+                        rounded-lg transition ease-in-out delay-100
+                        hover:bg-violet-500 hover:text-white duration-200
+                        focus:outline-none focus:ring focus:ring-violet-300" id="showDetectionTable">
+                Object Detection <i class="bi bi-box emoji"></i>
+            </button>
 
+            <button disabled class="py-2 px-4 m-1 text-md
+                        border-2 border-black/25 text-black/25
+                        rounded-lg mr-8" id="showPanopticTable">
+                Image Segmentation (Under Development) <i class="bi bi-image-fill emoji"></i>
+            </button>
+
+            <button class="py-2 px-4 m-1 text-md
+                        rounded-lg border-2 border-black/25 text-black
+                        hover:outline-none hover:ring hover:ring-gray-200
+                        " id="showYOLOExplain">
+                What is YOLO? 
+                <img src="https://emojicdn.elk.sh/🤔?style=google" class="emoji"/>
+            </button>
+
+            <a href="https://github.com/vjsrinivas/yolo-list" target="_blank" rel="noopener noreferrer" class="py-2 px-4 m-1 text-md
+                                rounded-lg border-2 border-black/25 text-white bg-stone-950
+                                transition ease-in-out delay-100
+                                hover:outline-none hover:ring hover:ring-stone-400
+                                ">
+                Contribute
+                <i class="bi bi-github emoji"></i>
+                <i class="bi bi-box-arrow-up-right emoji"></i>
+            </a>
+        </div>
     </div>
 
-    <div>
+    <div class="container mx-auto px-4 mb-4 mt-8">
+    <hr>
+    </div>
+
+    <div class="container mx-auto px-4 mt-4">
         <div id="wrapper"></div>
     </div>
 
+    <div class="container mx-auto px-4 mb-8">
+        <br>
+        <p class="text-sm font-light text-black-600/25">Created with <i class="bi bi-suit-heart-fill"></i> | Vijay Rajagopal</p>
+    </div>
+
 </body>
+
+<dialog class="backdrop" id="YOLOExplain">
+    <form method="dialog">
+        <div class="container px-4 mt-4" style="max-width: 640px">
+            <div class="flex justify-between">
+                <h1 class="text-2xl font-extrabold">What is YOLO?</h1>
+                <button id="closeBtn" class="py-2 px-4 text-xs
+                border-2 border-black/25 text-black
+                hover:outline-none hover:ring hover:ring-gray-200
+                rounded-lg"><i class="bi bi-x-lg"></i></button>
+            </div>
+        </div>
+        <div class="container px-4 mt-4" style="max-width: 640px">
+            <p>
+                YOLO (You Only Look Once) was a convolutional neural network-based (CNN) object detection method made by Joseph Redmon.
+                It was one of the first CNNs that balanced real-time inference speeds and mAP performance with novel methods that would become staple in future
+                One-Stage Object Detection methods.
+            </p>
+            <br>    
+            <p>
+                There have been multiple iterations made by many different people and groups over the years that have improved the speed and performance, with many
+                recent iterations of YOLO becoming mainstays in the object detection field both for researchers and developers.
+            </p>
+            <br>
+            <p>
+                The structure of different YOLO-based networks can differ greatly, but the most popular iterations (YOLOv3, YOLOv5, etc.) have the following structure:
+
+                <ul class="ml-8 mt-4 list-disc">
+                    <li class="mb-2"><b>Backbone Network:</b> This is typically another simpler, network that is being used to turn the input images into descriptive features maps for the
+                    rest of the network to take and turn into detections. Examples for YOLO are Darknet53, CSP-Darknet, and ViT (YOLOS).</li>
+                    <li class="mb-2"><b>Neck:</b> This component is made up of a few layers that typically reproject, realign, or do some other operations to the backbone feature maps.
+                        A simple example is a later addition to YOLOv3 - Spatial Pyramid Pooling.
+                    </li>
+                    <li class="mb-2"><b>Detection Head:</b> This "head" is where the network computes the final output (localization, classification, etc). Head structure heavily depends on the given network.
+                    For example, YOLOv3's detection head is a simple stack of Convolution+ReLU+BatchNorm modules that produce a single set of detections (excluding multiple outputs from scaling).
+                Other networks, such as YOLOX, have a "decoupled" detection head that provides localization, classification, and other attributes with seperated stacks of the aforementioned modules.</li>
+                </ul>
+            </p>
+            <br>
+            <img src="./images/YOLO-Structure.svg" alt="Image showing structure of a typical YOLO network"/>
+
+        </div>
+    </form>
+</dialog>
+
 <footer>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
